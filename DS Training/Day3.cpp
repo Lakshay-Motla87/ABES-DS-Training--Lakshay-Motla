@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     vector<int>v;
-    v.pushback(1);
+    v.push_back(1);
     cout<<"size of the vector 1:"<<v.size()<< endl;
     cout<<"capacity of water:"<<v.capacity()<< endl;
 
