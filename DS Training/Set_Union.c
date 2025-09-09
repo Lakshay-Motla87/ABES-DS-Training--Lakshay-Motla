@@ -8,26 +8,26 @@ int main() {
     int unionSet[n1 + n2]; 
     int k = 0; 
     for (int i = 0; i < n1; i++) {
-        int isDuplicate = 0;
+        int Duplicate = 0;
         for (int j = 0; j < k; j++) {
             if (unionSet[j] == arr1[i]) {
-                isDuplicate = 1;
+                Duplicate = 1;
                 break;
             }
         }
-        if (!isDuplicate) {
+        if (!Duplicate) {
             unionSet[k++] = arr1[i];
         }
     }
     for (int i = 0; i < n2; i++) {
-        int isDuplicate = 0;
+        int Duplicate = 0;
         for (int j = 0; j < k; j++) {
             if (unionSet[j] == arr2[i]) {
-                isDuplicate = 1;
+                Duplicate = 1;
                 break;
             }
         }
-        if (!isDuplicate) {
+        if (!Duplicate) {
             unionSet[k++] = arr2[i];
         }
     }
