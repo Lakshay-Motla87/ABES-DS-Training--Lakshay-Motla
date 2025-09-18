@@ -7,7 +7,7 @@ int main()
     int n = sizeof(b) / sizeof(b[0]);
     int merged[m + n];
     int i = 0, j = 0, k = 0;
-    while (i < m && j < n) {
+    while ((i < m) && (j < n)) {
         if (a[i] < b[j]) {
             merged[k] = a[i];
             i++;
